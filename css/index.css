@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* base rules: */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --body-bg: #f1f5f8;
+  --white-color: #fff;
+  --black-color: #444;
+  --main-color: #49a6e9;
+  --paragraph-color: hsl(210, 22%, 49%);
+  --transition: all 0.5s ease-in-out;
+  --radius: 0.5rem;
+  --line-height: 1.7rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+body {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* container part: */
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+  }
+}
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+}
+
+h1 {
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.alert {
+  margin: 10px 0 20px 0;
+  padding: 7px;
+  border-radius: var(--radius);
+  text-align: center;
+  color: var(--white-color);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.success {
+  background-color: #79b4b7;
+}
+.error {
+  background-color: #ff2442;
+}
+form > div {
+  margin: 1rem 0;
+}
+form > div label {
+  display: block;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+form > div input {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: transparent;
+  border: 1px solid #e1e1e1;
+  border-radius: var(--radius);
+}
+form > div input:focus {
+  outline: none;
+  border: 1px solid #33c3f0;
+}
+form > div input[type="submit"] {
+  cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+table {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+table thead tr th:first-of-type,
+table tbody tr td:first-of-type {
+  padding-left: 0;
+}
+table thead tr th,
+table tbody tr td {
+  text-align: start;
+  padding: 12px 15px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+table thead tr th {
+  font-weight: 800;
+}
+table tbody tr td {
+  font-weight: 700;
+}
+table tbody tr td a {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #ff2442;
+}
